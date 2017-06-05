@@ -114,7 +114,7 @@ header {
 	width: 100%;
 	color: white;
 	background: rgba(28, 36, 65, 0.93);
-	background: url('../img/header.jpg') no-repeat;
+	background: url('../img/header.jpg') center right no-repeat;
 	background-size: cover;
 }
 
