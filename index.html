@@ -27,13 +27,9 @@
 				<div class="header-text">
 					<div class="row">
 						<div class="col-md-12 text-center">
-						<h1 class="light white"><a class="white" href="https://www.apple.com/apple-events/june-2017/"> WWDC17 </a>已经</h1>
 
              <div id="CountMsg" class="white"> 
-				<span id="t_d">00d</span> 
-				<span id="t_h">00h</span> 
-				<span id="t_m">00m</span> 
-				<span id="t_s">00s</span> 
+               <h1 class="light white"><a class="white" href="https://www.zhihu.com/question/31861581/answer/103060018"> IN ❤ for<br><span id="t_d">00 days</span></a></h1>
 			</div> 
 						</div>
 					</div>
@@ -49,19 +45,13 @@
 	</div>
 	<script type="text/javascript"> 
 function getRTime(){ 
-var EndTime= new Date('2017/06/06 01:00:00'); //截止时间 
+var EndTime= new Date('2016/02/15 00:00:00'); //截止时间 
 var NowTime = new Date(); 
 var t =EndTime.getTime() - NowTime.getTime(); 
  
 var d=Math.floor(-t/1000/60/60/24); 
-var h=Math.floor(-t/1000/60/60%24); 
-var m=Math.floor(-t/1000/60%60); 
-var s=Math.floor(-t/1000%60); 
  
-document.getElementById("t_d").innerHTML = d + "d"; 
-document.getElementById("t_h").innerHTML = h + "h"; 
-document.getElementById("t_m").innerHTML = m + "m"; 
-document.getElementById("t_s").innerHTML = s + "s"; 
+document.getElementById("t_d").innerHTML = d + " days"; 
 } 
 setInterval(getRTime,1000); 
 </script> 
