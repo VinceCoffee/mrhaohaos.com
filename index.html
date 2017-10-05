@@ -27,20 +27,14 @@
 				<div class="header-text">
 					<div class="row">
 						<div class="col-md-12 text-center">
-						<h1 class="light white">距离预订<a class="white" href="https://www.apple.com/cn/iphone-x/">  iPhone X </a>还有</h1>
-
-             <div id="CountMsg" class="white">
-				<span class="light" id="t_d">00d</span>
-				<span class="light" id="t_h">00h</span>
-				<span class="light" id="t_m">00m</span>
-				<span class="light" id="t_s">00s</span>
-			</div>
+						<h1 class="white">It's been <span class="white" id="t_d">   </span> days.</h1>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+
 	<!-- Holder for mobile navigation -->
 	<div class="mobile-nav">
 		<ul>
@@ -49,19 +43,20 @@
 	</div>
 	<script type="text/javascript">
 function getRTime(){
-var EndTime= new Date('2017/10/27 15:01:00'); //截止时间
+// var EndTime= new Date('2017/10/27 15:01:00'); //截止时间
+var EndTime= new Date('2016/02/15 00:00:00'); //截止时间
 var NowTime = new Date();
 var t =EndTime.getTime() - NowTime.getTime();
 
-var d=Math.floor(t/1000/60/60/24);
-var h=Math.floor(t/1000/60/60%24);
-var m=Math.floor(t/1000/60%60);
-var s=Math.floor(t/1000%60);
-
-document.getElementById("t_d").innerHTML = d + "d";
-document.getElementById("t_h").innerHTML = h + "h";
-document.getElementById("t_m").innerHTML = m + "m";
-document.getElementById("t_s").innerHTML = s + "s";
+var d=Math.floor(-t/1000/60/60/24);
+// var h=Math.floor(t/1000/60/60%24);
+// var m=Math.floor(t/1000/60%60);
+// var s=Math.floor(t/1000%60);
+document.getElementById("t_d").innerHTML = d;
+// document.getElementById("t_d").innerHTML = d + "d";
+// document.getElementById("t_h").innerHTML = h + "h";
+// document.getElementById("t_m").innerHTML = m + "m";
+// document.getElementById("t_s").innerHTML = s + "s";
 }
 setInterval(getRTime,1000);
 </script>
