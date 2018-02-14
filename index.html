@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>We're Mr.Haohaos!</title>
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<!-- Owl -->
-	<link rel="stylesheet" type="text/css" href="css/owl.css">
-	<!-- Animate.css -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
-	<!-- Elegant Icons -->
-	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
-	<!-- Main style -->
-	<link rel="stylesheet" type="text/css" href="css/cardio.css">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-6664792722367768",
-    enable_page_level_ads: true
-  });
-</script>
-</head>
-
-<body>
-	<header id="intro">
-		<div class="container">
-			<div class="table">
-				<div class="header-text">
-					<div class="row">
-						<div class="col-md-12 text-center">
-              <a href="http://mp.weixin.qq.com/s/t6wTLcC8ZVK45kvfnfoR3w"><h1 class="white">It's been <span class="white" id="t_d">   </span> days.</h1></a>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>We're Mr.Haohaos!</title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<!-- Owl -->
+		<link rel="stylesheet" type="text/css" href="css/owl.css">
+		<!-- Animate.css -->
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+		<!-- Elegant Icons -->
+		<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
+		<!-- Main style -->
+		<link rel="stylesheet" type="text/css" href="css/cardio.css">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-6664792722367768",
+		enable_page_level_ads: true
+		});
+		</script>
+	</head>
+	<body>
+		<header id="intro">
+			<div class="container">
+				<div class="table">
+					<div class="header-text">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<a href="http://mp.weixin.qq.com/s/t6wTLcC8ZVK45kvfnfoR3w"><h1 class="white">It's been <span class="white" id="t_d">   </span><span class="white" id="days"></span></h1></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</header>
+		<!-- Holder for mobile navigation -->
+		<div class="mobile-nav">
+			<ul>
+			</ul>
+			<a href="#" class="close-link"><i class="arrow_up"></i></a>
 		</div>
-	</header>
-
-	<!-- Holder for mobile navigation -->
-	<div class="mobile-nav">
-		<ul>
-		</ul>
-		<a href="#" class="close-link"><i class="arrow_up"></i></a>
-	</div>
-	<script type="text/javascript">
-function getRTime(){
-// var EndTime= new Date('2017/10/27 15:01:00'); //截止时间
-var EndTime= new Date('2016/02/15 00:00:00'); //截止时间
-var NowTime = new Date();
-var t =EndTime.getTime() - NowTime.getTime();
-
-var d=Math.floor(-t/1000/60/60/24 * 1) / 1;
-// var h=Math.floor(t/1000/60/60%24);
-// var m=Math.floor(t/1000/60%60);
-// var s=Math.floor(t/1000%60);
-document.getElementById("t_d").innerHTML = d;
-// document.getElementById("t_d").innerHTML = d + "d";
-// document.getElementById("t_h").innerHTML = h + "h";
-// document.getElementById("t_m").innerHTML = m + "m";
-// document.getElementById("t_s").innerHTML = s + "s";
-}
-setInterval(getRTime,1000);
-</script>
-	<!-- Scripts -->
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/typewriter.js"></script>
-	<script src="js/jquery.onepagenav.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
+		<script type="text/javascript">
+		function getRTime(){
+		// var EndTime= new Date('2017/10/27 15:01:00'); //截止时间
+		var EndTime= new Date('2016/02/15 00:00:00'); //截止时间
+		var NowTime = new Date();
+		var t =EndTime.getTime() - NowTime.getTime();
+		var d=Math.floor(-t/1000/60/60/24 * 1) / 1;
+		// var h=Math.floor(t/1000/60/60%24);
+		// var m=Math.floor(t/1000/60%60);
+		// var s=Math.floor(t/1000%60);
+		if (d == 731) {
+			document.getElementById("t_d").innerHTML = "2 years";
+			document.getElementById("days").innerHTML = ".";
+		} else {
+			document.getElementById("t_d").innerHTML = d;
+			document.getElementById("days").innerHTML = " days.";
+		}
+		// document.getElementById("t_d").innerHTML = d + "d";
+		// document.getElementById("t_h").innerHTML = h + "h";
+		// document.getElementById("t_m").innerHTML = m + "m";
+		// document.getElementById("t_s").innerHTML = s + "s";
+		}
+		setInterval(getRTime,1000);
+		</script>
+		<!-- Scripts -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/typewriter.js"></script>
+		<script src="js/jquery.onepagenav.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
